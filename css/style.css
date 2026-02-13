@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e3cab8, #fddec8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+/* PANEL */
+.panel {
+    position: absolute;
+    text-align: center;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.5s ease;
+    width: 80vw;
+    height: 88vw;
+    max-width: 420px;
+    padding: 20px;
+}
+
+div#songPanel {
+    background-color: #6b2e0f;
+    border-radius: 30px;
+    background-image: url('../img/7fbef69f403c7a863cf70f49b796ec74.jpg');
+}
+
+.panel.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+h1 {
+    color: #000000;
+}
+
+button {
+    position: relative;
+    padding: 14px 22px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    max-width: 280px;
+    top: 50px;
+}
+
+#yesBtn {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+#noBtn {
+    background: #333;
+    color: white;
+}
+
+/* GIFTS */
+.gift-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.gift {
+    width: 80px;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+    transition: transform 0.3s;
+}
+
+.gift:hover {
+    transform: scale(1.1);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* MUSIC */
+.album-cover {
+    width: 60%;
+    max-width: 220px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+#playBtn {
+    position: relative;
+    background: #000000;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+}
+
+#progressBar {
+    position: relative;
+    width: 90%;
+    top: -100px;
+    margin-top: 10px;
+}
+
+.backBtn {
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* GIFT 2 */
+.gift2-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.present-item {
+    width: 120px;
+    transform: rotate(-17deg);
+}
+
+.present2-item {
+    position: relative;
+    width: 80px;
+    top: 50px;
+    height: 90px;
+    transform: rotate(10deg);
+}
+
+/* HEARTS */
+.hearts-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.heart-img {
+    position: absolute;
+    width: 35px;
+    animation: rise 4s linear forwards;
+}
+
+@keyframes rise {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-500px); opacity: 0; }
+}
+
+/* LOVE CARD */
+.love-card {
+    position: relative;
+    background: #6b2e0f;
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    width: 85%;
+    max-width: 420px;
+    margin: auto;
+    height: 200px;
+}
+
+.top-hearts {
+    position: relative;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.love-text {
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+    top: -20px;
+}
+
+.kiss-img {
+    position: relative;
+    top: -70px;
+    left: -100px;
+    rotate: -12deg;
+    width: 70px;
+    margin-top: 15px;
+}
+
+.bouquet-img {
+    position: relative;
+    rotate: 17deg;
+    top: -70px;
+    left: 110px;
+    width: 70px;
+    margin-top: 10px;
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 400px) {
+    h1 { font-size: 20px; }
+    .gift { width: 65px; }
+}
