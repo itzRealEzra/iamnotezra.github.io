@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ff2e63">
+    <title>Will You Be My Valentine? ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="credits" id="owner">
+    <h style="
+    position: relative;
+    left: 138px;
+    top: 410px;
+    ">@iamnot_ezra</h>
+</div>
+
+<div class="panel active" id="mainPanel">
+    <h1>Will You Be My Valentine? 💖</h1>
+    <div class="milk-mocha">
+        <img src="img/tonton-chick.gif" class="gif" id="question">
+    </div>
+    <div class="buttons">
+        <button id="yesBtn">Yes 💕</button>
+        <button id="noBtn">No 💔</button>
+    </div>
+</div>
+
+<div class="panel" id="noPanel">
+    <div class="milk-mocha">
+        <img src="img/milk-and-mocha-crying.gif" class="gif" id="cry">
+    </div>
+    <h1>I don’t accept No as an Answer</h1>
+</div>
+
+<div class="panel" id="yesPanel">
+    <div class="milk-mocha">
+        <img src="img/milk-mocha-bear.gif" class="gif" id="gift">
+    </div>
+    <h1>Choose a Gift!</h1>
+    <div class="gift-container">
+        <img src="img/gift1.svg" class="gift" id="gift1">
+        <img src="img/gift1.svg" class="gift" id="gift2">
+        <img src="img/gift1.svg" class="gift" id="gift3">
+    </div>
+</div>
+
+<div class="panel" id="songPanel">
+    <div class="music-card">
+        <img src="img/songCover.jpg" class="album-cover">
+        <h2>BIRDS OF A FEATHER</h2>
+        <audio id="audioPlayer" src="audio/BirdsOfFeather.mp3"></audio>
+
+        <div class="controls">
+            <button id="playBtn">▶</button>
+            <input type="range" id="progressBar" value="0">
+        </div>
+
+        <button class="backBtn" id="backFromSong">⬅ Go Back</button>
+    </div>
+</div>
+
+<div class="panel" id="gift2Panel">
+    <h1>Got this for you <3</h1>
+
+    <div class="gift2-content">
+        <img src="img/bouquet.png" class="present-item">
+        <img src="img/cupcake.png" class="present2-item">
+    </div>
+
+    <button class="backBtn" id="backFromGift2">⬅ Go Back</button>
+    <div class="hearts-container" id="heartsContainer"></div>
+</div>
+
+<div class="panel" id="gift3Panel">
+    <div class="love-card">
+        <div class="top-hearts">
+            <span>💗</span>
+            <span>💖</span>
+            <span>💗</span>
+            <span>💖</span>
+            <span>💗</span>
+        </div>
+
+        <p class="love-text">
+            In your eyes, I have found a home where my soul finally feels at rest.
+            Every moment spent with you is a beautiful reminder that true happiness exists.
+            You are the melody that my heart beats to and the light that guides me.
+            I love you more than words could ever express.
+        </p>
+
+        <img src="img/kiss.png" class="kiss-img">
+        <img src="img/ee4f31ff74d72b7a66483c423f5df84c.png" class="bouquet-img">
+    </div>
+
+    <button class="backBtn" id="backFromGift3">⬅ Go Back</button>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
